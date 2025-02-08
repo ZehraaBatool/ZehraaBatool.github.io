@@ -499,76 +499,76 @@ button,
     }
     
     /* ✅ Laptop (No Changes) */
-    @media screen and (min-width: 1681px) {
-      .posts article:nth-child(3n + 1):before {
-        display: none;
-      }
-      .posts article:nth-child(3n + 1):after {
-        width: 100%;
-      }
-      .posts article:nth-last-child(1),
-      .posts article:nth-last-child(2),
-      .posts article:nth-last-child(3) {
-        margin-bottom: 0;
-      }
-      .posts article:nth-last-child(1):before,
-      .posts article:nth-last-child(2):before,
-      .posts article:nth-last-child(3):before {
-        height: 100%;
-      }
-      .posts article:nth-last-child(1):after,
-      .posts article:nth-last-child(2):after,
-      .posts article:nth-last-child(3):after {
-        display: none;
-      }
-    }
-    
-    /* ✅ Tablets (Two Articles per Row) */
-    @media screen and (max-width: 1024px) {
-      .posts {
-        margin: 0 auto;
-        width: 100%;
-        justify-content: center;
-      }
-    
-      .posts article {
-        flex: 1 1 calc(50% - 2em); /* Two articles per row */
-        margin: 0 1em 3em 1em;
-      }
-    
-      .posts article.Certifcation {
-        flex: 1 1 calc(50% - 2em);
-      }
-    }
-    
-    /* ✅ Mobile (Single Column Layout) */
-    @media screen and (max-width: 600px) {
-      .posts {
-        margin: 0 auto;
-        width: 100%;
-        flex-direction: column;
-      }
-    
-      .posts article {
-        flex: 1 1 100%;
-        margin: 0 0 2em 0;
-      }
-    
-      .posts article.Certifcation {
-        flex: 1 1 100%;
-      }
-    
-      .posts article img.certified {
-        width: 100%; /* Make certification images responsive */
-        height: auto;
-      }
-    
-      .posts article img {
-        width: 40px; /* Slightly larger icons for better touch */
-        height: 40px;
-      }
-    }
-    
+@media screen and (min-width: 1681px) {
+  .posts article:nth-child(3n + 1):before {
+    display: none;
+  }
+  .posts article:nth-child(3n + 1):after {
+    width: 100%;
+  }
+  .posts article:nth-last-child(1),
+  .posts article:nth-last-child(2),
+  .posts article:nth-last-child(3) {
+    margin-bottom: 0;
+  }
+  .posts article:nth-last-child(1):before,
+  .posts article:nth-last-child(2):before,
+  .posts article:nth-last-child(3):before {
+    height: 100%;
+  }
+  .posts article:nth-last-child(1):after,
+  .posts article:nth-last-child(2):after,
+  .posts article:nth-last-child(3):after {
+    display: none;
+  }
+}
+
+/* ✅ Tablets (Two Articles per Row) */
+@media screen and (max-width: 1024px) {
+  .posts {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .posts article {
+    flex: 1 1 calc(50% - 2em); /* Two articles per row */
+    margin: 0 1em 3em 1em;
+  }
+
+  .posts article.Certifcation {
+    flex: 1 1 calc(50% - 2em);
+  }
+}
+
+/* ✅ Mobile (Single Column Layout) */
+@media screen and (max-width: 600px) {
+  .posts {
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .posts article {
+    flex: 1 1 100%;
+    margin: 0 0 2em 0;
+  }
+
+  .posts article.Certifcation {
+    flex: 1 1 100%;
+  }
+
+  .posts article img.certified {
+    width: 100%; /* Make certification images responsive */
+    height: auto;
+  }
+
+  .posts article img {
+    width: 40px; /* Slightly larger icons for better touch */
+    height: 40px;
+  }
+}
+
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
