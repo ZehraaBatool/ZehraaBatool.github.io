@@ -425,7 +425,7 @@ button,
       margin: 0 0 6em 6em;
       position: relative;
       padding: 15px;
-      max-height: 260px;
+      max-height: 300px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
@@ -436,21 +436,6 @@ button,
       
     }
     
-    .posts article.Certifcation {
-      flex: 1 1 calc(33.333% - 6em);
-      margin: 0 0 6em 6em;
-      position: relative;
-      max-height: 350px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .posts article img.certified {
-      height: 200px;
-      width: 300px;
-      margin-bottom: 20px;
-    }
     
     .posts article img {
       height: 30px;
@@ -504,6 +489,14 @@ button,
   margin-top: auto; /* Pushes it to the bottom */
   box-sizing: border-box;
 }
+.posts article img.certified {
+  width: 70%; /* Ensures it doesn’t exceed container */
+  max-width: 300px; /* Prevents it from getting too large */
+  height: 70%; /* Keeps aspect ratio */
+  display: block; /* Prevents unwanted inline spacing */
+  margin: 7px; /* Removes centering */
+  text-align: left;
+}
 
     /* ✅ Laptop (No Changes) */
 @media screen and (min-width: 1681px) {
@@ -542,16 +535,20 @@ button,
     flex: 1 1 calc(50% - 2em); /* Two articles per row */
     margin: 0 1em 3em 1em;
   }
-
-  .posts article.Certifcation {
-    flex: 1 1 calc(50% - 2em);
-  }
   /* ✅ Fix Button Overflow */
   .posts article .button {
     width: 100%; /* Ensures it stays inside */
     text-align: center;
     margin-top: auto; /* Pushes button to the bottom */
     box-sizing: border-box;
+  }
+  .posts article img.certified {
+    width: 70%; /* Ensures it doesn’t exceed container */
+    max-width: 300px; /* Prevents it from getting too large */
+    height: 70%; /* Keeps aspect ratio */
+    display: block; /* Prevents unwanted inline spacing */
+    margin: 7px; /* Removes centering */
+    text-align: left;
   }
 }
 
@@ -563,7 +560,7 @@ button,
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align items */
+    align-items: left; /* Center align items */
   }
 
   .posts article {
@@ -575,14 +572,16 @@ button,
     margin: 0 auto 2em; /* Center and add spacing */
     padding: 1.5em; /* Add padding inside boxes */
     box-sizing: border-box; /* Prevents padding from affecting size */
-    min-height: 250px; /* Ensures enough space for content */
+    min-height: 290px; /* Ensures enough space for content */
   }
-
   .posts article img.certified {
-    width: 70%; /* Make certification images responsive */
-    height: auto;
+    width: 50%; /* Ensures it doesn’t exceed container */
+    max-width: 300px; /* Prevents it from getting too large */
+    height: 60%; /* Keeps aspect ratio */
+    display: block; /* Prevents unwanted inline spacing */
+    margin: 5px; /* Removes centering */
+    text-align: left;
   }
-
   .posts article img {
     width: 40px; /* Keep icons touch-friendly */
     height: 40px;
