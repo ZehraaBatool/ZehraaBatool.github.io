@@ -541,21 +541,21 @@ button,
   }
 }
 
-/* ✅ Mobile (Single Column Layout) */
+/* ✅ Mobile (Full Width & Proper Spacing) */
 @media screen and (max-width: 600px) {
   .posts {
     margin: 0 auto;
     width: 100%;
     flex-direction: column;
+    align-items: center; /* Center align items */
   }
 
   .posts article {
     flex: 1 1 100%;
-    margin: 0 0 2em 0;
-  }
-
-  .posts article.Certifcation {
-    flex: 1 1 100%;
+    width: 90%; /* Ensures full width without touching edges */
+    margin: 0 auto 2em; /* Center and add spacing */
+    padding: 1.5em; /* Add padding inside boxes */
+    box-sizing: border-box; /* Prevents padding from affecting size */
   }
 
   .posts article img.certified {
@@ -564,10 +564,20 @@ button,
   }
 
   .posts article img {
-    width: 40px; /* Slightly larger icons for better touch */
+    width: 40px; /* Keep icons touch-friendly */
     height: 40px;
   }
+
+  .posts article .button {
+    display: block;
+    width: 100%; /* Make buttons take full width inside the box */
+    text-align: center;
+    margin-top: 1em;
+    padding: 0.8em;
+    font-size: 1rem;
+  }
 }
+
 
 /* Wrapper */
 #wrapper {
